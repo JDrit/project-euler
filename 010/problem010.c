@@ -18,7 +18,7 @@ int main(int agrc, char *argv[]) {
         if (new) {
             primes[j] = i;
             sum += i;
-            printf("%i %ld\n", i, sum);
+            //printf("%i %ld\n", i, sum);
         }
     }
     printf("%ld\n", sum);
