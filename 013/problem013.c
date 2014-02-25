@@ -19,9 +19,7 @@ int main(int agtc, char *argv[]) {
             } else {
                 numbers[i][j] = (char) fgetc(file) - '0';
             }
-            printf("%i", numbers[i][j]);
         }
-        printf("\n");
     }
     fclose(file);
     
@@ -30,7 +28,6 @@ int main(int agtc, char *argv[]) {
         for (j = 0 ; j < amount ; j++) {
             sum += numbers[j][i];
         }
-        printf("%i %i\n", i, sum % 10);
         answer[i] = sum % 10;
         carryOver = sum / 10;
 
